@@ -26,3 +26,36 @@ users = [
   { 'id': '8', 'name': 'Simon Peterson', 'age': 30 },
   { 'id': '9', 'name': 'Daniel Cane', 'age': 51 },
 ]
+
+def get_user_average_age(d):
+  '''
+  gauname viso saraso amziaus vidurki
+  :param users:
+  :return:
+  grazina vidurki
+  '''
+  age = 0
+  j=0
+  for i in d:
+    age += i['age']
+    j += 1
+  avg_age = age/len(d)
+  print(avg_age)
+
+get_user_average_age(users)
+def get_users_names(d):
+  '''
+  kaip argumentą priims sąrašą ir duoto sąrašo
+  atveju grąžins sąrašą su visų vartotojų vardais, išrikiuotais abėcėlės tvarka
+  :param users:
+  :return:
+  grąžins sąrašą su visų vartotojų vardais, išrikiuotais abėcėlės tvarka
+  '''
+  names = []
+  for i in d:
+    names.append(i['name'])
+  names.sort()
+  print(names)
+
+
+get_users_names(users)

@@ -11,3 +11,16 @@ audi = {
   "year": 2005,
   "color": 'white',
 }
+
+def get_dict_values(car):
+  '''
+      Si funkcija pasiema argumentus is audi dictionary ir paiima tik value argumentus ir atspauzdina tai sarase.
+      :param audi:
+      :return:
+      Grazina
+      audi dictionary values
+      '''
+  print(list(car.values()))
+
+
+get_dict_values(audi)
